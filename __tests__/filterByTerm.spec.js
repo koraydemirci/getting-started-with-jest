@@ -1,9 +1,4 @@
-function filterByTerm(inputArr, searchTerm) {
-    const regex = new RegExp(searchTerm, "i");
-    return inputArr.filter(function(arrayElement) {
-      return arrayElement.url.match(regex);
-    });
-  }
+import filterByTerm  from "../src/filterByTerm";
 
 describe("Filter function", () => {
     test("it should filter by a search term (link)", () => {
